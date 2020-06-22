@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'users.apps.UsersConfig',
     'pages.apps.PagesConfig',
     'articles.apps.ArticlesConfig',  # new
+    # 'm_user.apps.MUserConfig',
 
     # outside
     'crispy_forms',  # new

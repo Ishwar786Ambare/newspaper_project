@@ -36,8 +36,9 @@ urlpatterns = [
     path('', TemplateView.as_view(template_name='home.html'), name='home'),  # new
     path('', include('pages.urls')),  # new
     path('articles/', include('articles.urls')),
-]
 
+    path('muser/', include('m_user.urls')),  # NOW THIS IS FOR m_user
+]
 
 # NEW THINGS JUST BEEN ADDED TO THE FILES
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

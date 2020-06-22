@@ -19,7 +19,14 @@
                 <p class="card-text">
                     {{ article.body }}
                     <!-- Changes start here! -->
-                    <a href="{% url 'article_edit' article.pk %}">Edit</a> | <a href="{% url 'article_delete' article.pk %}">Delete</a>
+
+{#                    {% if user.is_authenticated and user.is_age %}#}
+
+                        <a href="{% url 'article_edit' article.pk %}">Edit</a> | <a href="{% url 'article_delete' article.pk %}">Delete</a>
+{#                        {% else %}#}
+{#                        <a href="{% url 'article_edit' article.pk %}">Edit</a> | <a href="{% url 'article_delete' article.pk %}">Delete</a>#}
+{#                    {% endif %}#}
+
                 </p>
               </div>
             </div>
