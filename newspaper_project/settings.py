@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     # 'm_user.apps.MUserConfig',
 
     # outside
-    'crispy_forms',  # new
+    # 'crispy_forms',  # new
 ]
 
 MIDDLEWARE = [
@@ -145,7 +145,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 TIME_ZONE = 'America/New_York'  # new
 
-CRISPY_TEMPLATE_PACK = 'bootstrap4'
+# CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'

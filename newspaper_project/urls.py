@@ -37,7 +37,7 @@ urlpatterns = [
     path('', include('pages.urls')),  # new
     path('articles/', include('articles.urls')),
 
-    path('muser/', include('m_user.urls')),  # NOW THIS IS FOR m_user
+    # path('muser/'̥,include('m_user.urls')),  # NOW THIS IS FOR m_user
 ]
 
 # NEW THINGS JUST BEEN ADDED TO THE FILES
