@@ -1,18 +1,11 @@
-from django.views.generic import ListView
-from django.shortcuts import render, redirect
-
 # from .forms import NewForm
-from .models import Article
-
-from django.views.generic import ListView, DetailView  # new
-from django.views.generic.edit import UpdateView, DeleteView  # new
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.core.exceptions import PermissionDenied  # new
 from django.urls import reverse_lazy  # new
-
+from django.views.generic import ListView, DetailView  # new
 from django.views.generic.edit import UpdateView, DeleteView, CreateView  # new
 
-from django.contrib.auth.mixins import LoginRequiredMixin
-
-from django.core.exceptions import PermissionDenied  # new
+from .models import Article
 
 
 class ArticleListView(LoginRequiredMixin, ListView):
